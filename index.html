@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vebjørn — En gave fra nord</title>
+  <style>
+    :root {
+      --bg: #f2f4f6;
+      --text: #0f1a24;
+      --muted: #5f6f7a;
+      --red: #8b1d2c;       /* norsk rød */
+      --blue: #0b2a4a;      /* mørk nordisk blå */
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--bg), #e9eef2);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+      background: var(--card);
+      border-radius: 22px;
+      padding: 48px;
+      box-shadow: 0 30px 60px rgba(11,42,74,0.12);
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 44px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 32px;
+      }
+    }
+
+    .photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .content h1 {
+      font-size: 2.6rem;
+      margin-bottom: 6px;
+      color: var(--blue);
+    }
+
+    .content h2 {
+      font-size: 0.9rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 28px;
+    }
+
+    .content p {
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .quote {
+      margin-top: 34px;
+      padding-left: 22px;
+      border-left: 3px solid var(--blue);
+      color: var(--text);
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .music {
+      margin-top: 24px;
+    }
+
+    .brazil {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <section class="hero">
+      <div class="photo">
+        <img src="EE1DF1AC-92A4-4C64-BBCC-707F0FDF7567.jpeg" alt="Vebjørn" />
+      </div>
+
+      <div class="content">
+        <h1>Vebjørn</h1>
+        <h2>En gave fra nord</h2>
+
+        <p>Noen historier kommer ikke med støy. De kommer som snøens stillhet — og forandrer alt.</p>
+
+        <p>Vebjørn er en 28 år gammel nordmann med et rolig nærvær og et blikk som minner om klart, bevegelig vann. Søt, vennlig og dypt intelligent — et møte som ikke føles tilfeldig, men som en gave.</p>
+
+        <p>Han elsker fotball og bærer med seg disiplinen fra barndommen. Han drømmer om å bli filmregissør fordi han ikke bare ser verden — han føler den, rammer den inn og gjør den til en fortelling.</p>
+
+        <p>Mellom store ideer og små detaljer bygger han verdener med gigantiske LEGO-sett. Hver bit på sin plass. Som ham selv. En sjelden diamant.</p>
+
+        <div class="quote">
+          “Det som er ment for deg, finner deg alltid.”
+        </div>
+
+        <div class="music">
+          <audio controls>
+            <source src="mc miller.mp4" type="audio/mp4" />
+            Din nettleser støtter ikke lydavspilling.
+          </audio>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <footer>
+    Rødt fra hjertet. Blått fra nord. ❄️<br/>
+    Denne historien fortsetter.
+
+    <div class="brazil">
+      <svg width="80" height="56" viewBox="0 0 80 56" aria-label="Brasil">
+        <rect width="80" height="56" fill="#009b3a"/>
+        <polygon points="40,6 74,28 40,50 6,28" fill="#ffdf00"/>
+        <circle cx="40" cy="28" r="12" fill="#002776"/>
+      </svg>
+    </div>
+  </footer>
+
+</body>
+</html>
